@@ -35,9 +35,27 @@ const PricingMenu = () => {
         { title: "Pick & Pack", price: "$0.25-$2 per item" },
         { title: "Additional Items", price: "$0.75 per item" }
       ]
+    },
+    {
+      name: "Shipping",
+      icon: <Truck className="w-6 h-6 text-sky-400" />,
+      items: [
+        { title: "Standard Shipping", price: "Carrier + 10-15%" },
+        { title: "Express Shipping", price: "Carrier + 8-12%" },
+        { title: "International Shipping", price: "Custom rates" }
+      ]
+    },
+    {
+      name: "Additional Services",
+      icon: <Package className="w-6 h-6 text-sky-400" />,
+      items: [
+        { title: "Kitting", price: "$0.25-$2 per item" },
+        { title: "Returns Processing", price: "$2-$5 per item" },
+        { title: "Custom Packaging", price: "Cost + 10-20%" },
+        { title: "Quality Control", price: "From $0.98/carton" }
+      ]
     }
   ];
-
   return (
     <div className="min-h-screen bg-slate-900 p-6">
       <div className="max-w-4xl mx-auto">
